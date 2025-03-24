@@ -12,7 +12,7 @@ from datetime import datetime
 import os
 
 # DeepSeek API setup
-DEEPSEEK_API_KEY = "your_deepseek_api_key"
+DEEPSEEK_API_KEY = "sk-5c8209e281ef46c284a3ed086e2667ff"
 DEEPSEEK_URL = "https://api.deepseek.com/v1/chat/completions"
 HEADERS = {"Authorization": f"Bearer {DEEPSEEK_API_KEY}", "Content-Type": "application/json"}
 
