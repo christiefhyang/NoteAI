@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Note Taker Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+        <h2>AI Note Taker</h2>
+        <div id="user-info">Welcome, <span id="username"></span> | <a href="#" id="logout">Logout</a></div>
+    </div>
+    <div class="sidebar">
+        <a href="#" class="active" data-section="dashboard">Dashboard</a>
+        <a href="#" data-section="notes">Recent Notes</a>
+        <a href="#" data-section="upload">Upload Audio</a>
+        <a href="#" data-section="settings">Settings</a>
+    </div>
+    <div class="main">
+        <div id="dashboard" class="section">
+            <h1>Your Notes at a Glance</h1>
+            <p>Notes this month: <span id="note-count">0</span></p>
+            <button id="start-recording">Start Recording</button>
+            <button id="stop-recording">Stop Recording</button>
+        </div>
+        <div id="notes" class="section" style="display: none;">
+            <h2>Recent Notes</h2>
+            <div id="notes-list"></div>
+        </div>
+        <div id="upload" class="section" style="display: none;">
+            <h2>Upload Audio</h2>
+            <form id="upload-form">
+                <input type="file" id="audio-file" accept="audio/*">
+                <button type="submit">Upload</button>
+            </form>
+        </div>
+        <div id="settings" class="section" style="display: none;">
+            <h2>Settings</h2>
+            <p>Coming soon...</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
