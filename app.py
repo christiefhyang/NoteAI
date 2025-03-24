@@ -18,7 +18,7 @@ HEADERS = {"Authorization": f"Bearer {DEEPSEEK_API_KEY}", "Content-Type": "appli
 
 # Flask app setup
 app = Flask(__name__)
-app.config["JWT_SECRET_KEY"] = "your_jwt_secret_key"  # Replace with a strong secret
+app.config["JWT_SECRET_KEY"] = "suckkiannastits"  # Replace with a strong secret
 jwt = JWTManager(app)
 
 # Dummy user database
