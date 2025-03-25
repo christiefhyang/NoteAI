@@ -1,4 +1,4 @@
-const API_BASE = "http://localhost:5000"; // Update to your deployed URL
+const API_BASE = "https://my-notetaker-api.herokuapp.com"; // Update to your deployed URL
 let token = localStorage.getItem("token");
 
 if (!token) {
